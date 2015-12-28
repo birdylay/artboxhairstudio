@@ -1,0 +1,237 @@
+.content:before {
+  content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   top:0;
+   background-image: url('image.jpeg');
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;  
+   height: 100%;
+   filter: blur(3px);
+   -webkit-filter: blur(3px);
+      -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+       -ms-filter: blur(3px);
+    opacity: 1;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+    -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        -o-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0.5; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0.5; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0.5; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0.5; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0.5; }
+}
+
+
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.soon {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 0.5em;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    text-align: center;
+
+}
+
+.logo {
+    max-width: 50%;
+    max-height: 50%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border:5px solid #000000;
+}
+
+.address {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 25%;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+    right: 25%;
+    top: 450px;
+
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+.animated.fadeIn {
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.facebook-hover {
+    background-image: url('facebook-hover.png');
+}
+
+.instagram-hover {
+background-image: url('instagram-hover.png');
+}
+
+.buttons {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+    right: 50%;
+    top: 460px;
+
+}
+
+.social-slide {
+    height: 48px;
+    width: 48px;
+    margin: 10px;
+    display:inline-block;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.social-slide:hover {
+    background-position: 0px -48px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
