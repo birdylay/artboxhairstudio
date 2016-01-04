@@ -6,7 +6,7 @@
    right: 0;
    z-index: -1;
    top:0;
-   background-image: url('image.jpeg');
+   background-image: url('../image/image.jpeg');
    background-position: top;
    background-repeat: no-repeat;
    background-size: cover;
@@ -79,9 +79,9 @@
     left: 0;
     margin: auto;
     overflow: auto;
-    position: fixed;
+    position: relative;
     right: 0;
-    top: 10%;
+    top: 0;
     text-align: center;
 
 }
@@ -105,14 +105,17 @@
     max-width: 100%;
     max-height: 100%;
     bottom: 0;
-    left: 25%;
+    left: 0;
     margin: auto;
     overflow: auto;
     position: relative;
-    right: 25%;
-    top: 450px;
+    right: 0;
+    top: 30%;
+    text-align: center;
 
 }
+
+.top-buffer { margin-top:20px; }
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -199,23 +202,23 @@
 }
 
 .facebook-hover {
-    background-image: url('facebook-hover.png');
+    background-image: url('../image/facebook-hover.png');
 }
 
 .instagram-hover {
-background-image: url('instagram-hover.png');
+background-image: url('../image/instagram-hover.png');
 }
 
 .buttons {
     max-width: 100%;
     max-height: 100%;
     bottom: 0;
-    left: 50%;
+    left: 0;
     margin: auto;
     overflow: auto;
     position: relative;
-    right: 50%;
-    top: 460px;
+    right: 0;
+    top: 0;
 
 }
 
